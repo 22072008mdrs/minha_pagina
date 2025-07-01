@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exemplo Formulário</title>
+</head>
+<body>
+	<h2>Cadastro do usuário</h2>                                                                                                            
+	<form action="https://httpbin.org/post" method="post">
+
+		<label for="nome">Insira o seu nome: </label>
+		<input type="text" name="nome" id="nome" required><br><br>
+
+		<label for="sobrenome">Insira o seu sobrenome:</label>
+		<input type="text" name="sobrenome" id="sobrenome" required><br><br>
+
+		<label for="profissao">Profissão:</label>
+		<input type="text" name="profissao" id="profissao" required><br><br>
+
+		<label for="idade">Idade:</label>
+		<input type="text" name="idade" id="idade" required><br><br>
+
+		<label for="cpf">CPF:</label>
+		<input type="text" name="cpf" id="cpf" required><br><br>
+
+		<label for="rg">RG:</label>
+		<input type="text" name="rg" id="rg" required><br><br>
+
+		<label for="cnh">CNH:</label>
+		<input type="text" name="cnh" id="cnh" required><br><br>
+
+		<label for="genero">Insira o seu gênero:</label><br>
+		<input type="radio" name="sexo" value="masculino" required>Masculino<br>
+		<input type="radio" name="sexo" value="feminino" required>Feminino<br>
+		<input type="radio" name="sexo" value="outro" required>Outro<br><br>
+
+		<label for="estado">Selecione seu Estado:</label>
+		<select id="estado" name="estado" required>
+		<option value="">Selecione</option>
+		<option value="ac">AC</option>
+		<option value="al">AL</option>
+		<option value="ap">AP</option>
+		<option value="am">AM</option>
+		<option value="ba">BA</option>
+		<option value="ce">CE</option>
+		<option value="df">DF</option>
+		<option value="es">ES</option>
+		<option value="go">GO</option>
+		<option value="ma">MA</option>
+		<option value="mt">MT</option>
+		<option value="ms">MS</option>
+		<option value="mg">MG</option>
+		<option value="pa">PA</option>
+		<option value="pb">PB</option>
+		<option value="pr">PR</option>
+		<option value="pe">PE</option>
+		<option value="pi">PI</option>
+		<option value="rj">RJ</option>
+		<option value="rn">RN</option>
+		<option value="rs">RS</option>
+		<option value="ro">RO</option>
+		<option value="rr">RR</option>
+		<option value="sc">SC</option>
+		<option value="sp">SP</option>
+		<option value="se">SE</option>
+		<option value="to">TO</option>
+	</select><br><br>
+	<p>Selecione os aplicativos que você mais utiliza:</p>
+
+		<label for="whatsapp">Whatsapp</label>
+		<input type="checkbox" name="app" id="whatsapp" value="whatsapp" required><br>
+
+		<label for="instagram">Instagram</label>
+		<input type="checkbox" name="app" id="instagram" value="instagram"><br>
+
+		<label for="x">X</label>
+		<input type="checkbox" name="app" id="X" value="X"><br>
+
+		<label for="facebook">Facebook</label>
+		<input type="checkbox" name="app" id="facebook"><br>
+
+		<label for="tiktok">Tiktok</label>
+		<input type="checkbox" name="app" id="tiktok"><br>
+
+		<label for="texto">Escreva a sua biografia:</label>
+        <textarea name="texto" rows="20" cols="80"></textarea>
+		<input type="submit" value="enviar">
+		<input type="reset" value="apagar">
+</form>
+</body>
+</html>
